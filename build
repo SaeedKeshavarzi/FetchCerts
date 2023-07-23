@@ -1,0 +1,3 @@
+#!/bin/bash
+
+g++ -std=c++11 fetch_certs.cpp -lssl -lcrypto -lpthread -Wall
