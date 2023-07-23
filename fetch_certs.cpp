@@ -75,7 +75,7 @@ int get_cert(const std::string& host, const std::string& ip)
       std::cout << "Error creating SSL. ";
       return -1;
   }
-  int sock = SSL_get_fd(ssl);
+  // int sock = SSL_get_fd(ssl);
   SSL_set_fd(ssl, s);
   int err = SSL_connect(ssl);
   if (err <= 0)
